@@ -1,0 +1,2 @@
+add_subdirectory(heir_opt)
+add_subdirectory(emitc-translate)

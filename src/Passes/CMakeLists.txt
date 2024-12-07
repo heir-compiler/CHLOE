@@ -1,0 +1,8 @@
+add_subdirectory(arith2heir)
+add_subdirectory(unroll)
+add_subdirectory(memref2heir)
+add_subdirectory(func2heir)
+add_subdirectory(heir2emitc)
+add_subdirectory(branch)
+add_subdirectory(loopsplit)
+add_subdirectory(loopbatch)
