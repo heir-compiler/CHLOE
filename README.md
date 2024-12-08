@@ -3,7 +3,8 @@ CHLOE is a end-to-end Fully Homomorphic Encryption (FHE) compiler to compile
 high-level input C programs into efficient FHE implementations. In general, 
 CHLOE uses both arithmetic and logic FHE encryption schemes to transform 
 programs with loop structures to efficient algorithms over fully 
-homomorphic encryption (FHE). CHLOE's designs are discribed in our [paper](https://www.computer.org/csdl/proceedings-article/sp/2025/223600a035/21B7QoGZAGc).
+homomorphic encryption (FHE). CHLOE's designs are discribed in our paper
+[CHLOE: Loop Transformation over Fully Homomorphic Encryption via Multi-Level Vectorization and Control-Path Reduction](https://www.computer.org/csdl/proceedings-article/sp/2025/223600a035/21B7QoGZAGc).
 # Structure of this Repository
 The repository is organized as follow:
 ```
