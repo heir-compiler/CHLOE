@@ -1,3 +1,4 @@
+// RUN: chloe-opt --heir2emitc --canonicalize
 module {
   func.func @data_analysis(%arg0: !emitc.opaque<"std::vector<LWECipher>">) -> !emitc.opaque<"LWECipher"> {
     %0 = "emitc.constant"() <{value = #emitc.opaque<"PolyPlain(MemoryManager::GetPool())">}> : () -> !emitc.opaque<"PolyPlain">

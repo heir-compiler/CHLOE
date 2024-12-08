@@ -1,5 +1,3 @@
-// #include <stdio.h>
-
 float data_analysis(float data[512])
 {
     float result = 0;

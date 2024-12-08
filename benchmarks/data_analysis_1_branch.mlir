@@ -1,3 +1,4 @@
+// RUN: chloe-opt --branch --canonicalize
 module {
   func.func @data_analysis(%arg0: memref<512xf32>) -> f32 {
     %cst = arith.constant 1.000000e+00 : f32

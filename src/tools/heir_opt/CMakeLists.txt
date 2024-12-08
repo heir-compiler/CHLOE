@@ -31,9 +31,9 @@ set(LIBS
         HEIRSplitLoop
         HEIRBatchLoop
         )
-add_llvm_executable(heir-opt heir-opt.cpp)
+add_llvm_executable(chloe-opt chloe-opt.cpp)
 
-llvm_update_compile_flags(heir-opt)
+llvm_update_compile_flags(chloe-opt)
 target_link_libraries(heir-opt PRIVATE ${LIBS})
 
 mlir_check_all_link_libraries(heir-opt)

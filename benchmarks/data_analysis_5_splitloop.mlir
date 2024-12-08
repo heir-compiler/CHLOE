@@ -1,3 +1,4 @@
+// RUN: chloe-opt --loop-analyze --canonicalize
 module {
   func.func @data_analysis(%arg0: !heir.lweciphervec<512 x f32>) -> !heir.lwecipher<f32> {
     %0 = heir.encode() {message = 1.000000e+00 : f32, noise = -1.000000e+00 : f64} : () -> !heir.plain
