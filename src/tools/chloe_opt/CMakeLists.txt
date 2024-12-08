@@ -34,6 +34,6 @@ set(LIBS
 add_llvm_executable(chloe-opt chloe-opt.cpp)
 
 llvm_update_compile_flags(chloe-opt)
-target_link_libraries(heir-opt PRIVATE ${LIBS})
+target_link_libraries(chloe-opt PRIVATE ${LIBS})
 
-mlir_check_all_link_libraries(heir-opt)
+mlir_check_all_link_libraries(chloe-opt)
