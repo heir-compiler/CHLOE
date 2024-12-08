@@ -17,7 +17,6 @@ src               – source files (.cpp)
  └ tools            – sources for the main commandline interface
 benchmarks        – benchmark evaluation
 ```
-# Structure of this Repository
 # Using CHLOE
 ### Front-End
 CHLOE uses [Polygeist](https://github.com/llvm/Polygeist) CLI `cgeist` 
@@ -45,12 +44,17 @@ input program.
 to sub loops with pure arithmetic/logic operations.
 + **--loop-batch**: A pass to transform loop structures into a batched version.
 + **--full-pass**: A full pass pipeline to transform the program in 
-standard MLIR dialects into optimized FHE implementations.  
+standard MLIR dialects into optimized FHE implementations. 
+
+For benchmark programs:
+```sh
+./{CHLOE_BUILD_DIR}/chloe-opt $fileName$.mlir --full-pass
+```
 
 Next, CHLOE uses `emitc-translate` to transform the MLIR file
 into a C++ file:
 ```sh
-./tools/emitc-translate $fileName$.mlir --mlir-to-cpp
+./{CHLOE_BUILD_DIR}/emitc-translate $fileName$.mlir --mlir-to-cpp
 ```
 
 # A Guide For HEIR Installation
